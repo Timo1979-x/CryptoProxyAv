@@ -24,7 +24,7 @@
     <ClInclude Include="Resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="CryptoProxyAv2.h">
+    <ClInclude Include="CryptoProxyAv.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\TodoServerApp.h">
@@ -38,7 +38,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CryptoProxyAv2.cpp">
+    <ClCompile Include="CryptoProxyAv.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="helpers.cpp">
@@ -57,7 +57,7 @@
     <Image Include="small.ico">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="CryptoProxyAv2.ico">
+    <Image Include="CryptoProxyAv.ico">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="resources\hexagon-128.ico">

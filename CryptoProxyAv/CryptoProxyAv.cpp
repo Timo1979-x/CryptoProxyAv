@@ -1,10 +1,10 @@
-// CryptoProxyAv2.cpp : Defines the entry point for the application.
+// CryptoProxyAv.cpp : Defines the entry point for the application.
 //
 #include "src\TodoServerApp.h"
 #include <cpprest/http_listener.h>
 #include <cpprest/json.h>
 #include "framework.h"
-#include "CryptoProxyAv2.h"
+#include "CryptoProxyAv.h"
 #include <windows.h>
 #include <shellapi.h>
 #include <stdio.h>

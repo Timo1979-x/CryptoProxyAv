@@ -22,7 +22,7 @@
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
     <ProjectGuid>{751e6af1-8f84-41e9-bab4-deee6d8140c0}</ProjectGuid>
-    <RootNamespace>CryptoProxyAv2</RootNamespace>
+    <RootNamespace>CryptoProxyAv</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -140,7 +140,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CryptoProxyAv2.h" />
+    <ClInclude Include="CryptoProxyAv.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="src\helpers.h" />
@@ -149,15 +149,15 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CryptoProxyAv2.cpp" />
+    <ClCompile Include="CryptoProxyAv.cpp" />
     <ClCompile Include="helpers.cpp" />
     <ClCompile Include="src\TodoServerApp.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="CryptoProxyAv2.rc" />
+    <ResourceCompile Include="CryptoProxyAv.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="CryptoProxyAv2.ico" />
+    <Image Include="CryptoProxyAv.ico" />
     <Image Include="resources\hexagon-128.ico" />
     <Image Include="small.ico" />
   </ItemGroup>

@@ -1,16 +1,16 @@
 //{{NO_DEPENDENCIES}}
 // Microsoft Visual C++ generated include file.
-// Used by CryptoProxyAv2.rc
+// Used by CryptoProxyAv.rc
 //
 #define IDC_MYICON                      2
-#define IDD_CRYPTOPROXYAV2_DIALOG       102
+#define IDD_CRYPTOPROXYAV_DIALOG        102
 #define IDS_APP_TITLE                   103
 #define IDD_ABOUTBOX                    103
 #define IDM_ABOUT                       104
 #define IDM_EXIT                        105
-#define IDI_CRYPTOPROXYAV2              107
+#define IDI_CRYPTOPROXYAV              107
 #define IDI_SMALL                       108
-#define IDC_CRYPTOPROXYAV2              109
+#define IDC_CRYPTOPROXYAV              109
 #define IDR_MAINFRAME                   128
 #define IDI_ICON1                       129
 #define IDC_STATIC                      -1
