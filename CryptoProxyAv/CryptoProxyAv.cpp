@@ -9,6 +9,8 @@
 #include <shellapi.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "src\crypto.h"
+#include "src\helpers.h"
 
 using namespace web;
 using namespace http;
@@ -23,15 +25,11 @@ WCHAR szTitle[MAX_LOADSTRING];                  // The title bar text
 WCHAR szWindowClass[MAX_LOADSTRING];            // the main window class name
 HTTPServer* httpServer;
 
-// declaration of external functions:
-void showVersion(wchar_t*);
-
 // Forward declarations of functions included in this code module:
 ATOM                MyRegisterClass(HINSTANCE hInstance);
 BOOL                InitInstance(HINSTANCE, int);
 LRESULT CALLBACK    WndProc(HWND, UINT, WPARAM, LPARAM);
 INT_PTR CALLBACK    About(HWND, UINT, WPARAM, LPARAM);
-
 
 HTTPServer* startHttp();
 
@@ -40,6 +38,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ LPWSTR    lpCmdLine,
                      _In_ int       nCmdShow)
 {
+
+    testBase64decode();
+    // Алгоритмы: "СТБ 1176.1",  "СТБ 34.101.31", провайдер:  L"Avest CNG Provider"
+    //testHash(L"СТБ 34.101.31", L"Avest CNG Provider");
+    return 0;
+
     // OutputDebugString(L"Unicode\n");
     MSG msg;
 

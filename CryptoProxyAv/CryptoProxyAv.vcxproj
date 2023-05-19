@@ -143,14 +143,22 @@
     <ClInclude Include="CryptoProxyAv.h" />
     <ClInclude Include="framework.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="src\crypto.h" />
     <ClInclude Include="src\helpers.h" />
     <ClInclude Include="src\MimeTypes.h" />
+    <ClInclude Include="src\tests\CryptoTest.h" />
     <ClInclude Include="src\TodoServerApp.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CryptoProxyAv.cpp" />
-    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="src\crypto.cpp" />
+    <ClCompile Include="src\tests\CryptoTest.cpp" />
+    <ClCompile Include="src\tests\encrypt.cpp" />
+    <ClCompile Include="src\tests\EnumAlgorithms.cpp" />
+    <ClCompile Include="src\tests\EnumProviders.cpp" />
+    <ClCompile Include="src\helpers.cpp" />
+    <ClCompile Include="src\tests\sign.cpp" />
     <ClCompile Include="src\TodoServerApp.cpp" />
   </ItemGroup>
   <ItemGroup>
