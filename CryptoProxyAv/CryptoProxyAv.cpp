@@ -11,6 +11,13 @@
 #include <stdlib.h>
 #include "src\crypto.h"
 #include "src\helpers.h"
+#include "src\crypto.h"
+
+#pragma comment (lib, "crypt32.lib")
+#pragma comment (lib, "cryptui.lib")
+#pragma comment (lib, "Bcrypt.lib")
+#pragma comment (lib, "Ncrypt.lib")
+
 
 using namespace web;
 using namespace http;
@@ -39,9 +46,11 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
                      _In_ int       nCmdShow)
 {
 
-    testBase64decode();
+    //testBase64decode();
     // Алгоритмы: "СТБ 1176.1",  "СТБ 34.101.31", провайдер:  L"Avest CNG Provider"
-    //testHash(L"СТБ 34.101.31", L"Avest CNG Provider");
+    //crypto::testHash(L"СТБ 34.101.31", L"Avest CNG Provider");
+    crypto::testSign(L"СТБ 34.101.31", L"Avest CNG Provider");
+    // crypto::enumStorageProviders();
     return 0;
 
     // OutputDebugString(L"Unicode\n");
@@ -172,7 +181,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         {
 
         case OPTION_ABOUT:
-            showVersion(const_cast<wchar_t*> (L"CryptoProxyAV version "));
+            helpers::showVersion(const_cast<wchar_t*> (L"CryptoProxyAV version "));
             break;
 
         case OPTION_EXIT:

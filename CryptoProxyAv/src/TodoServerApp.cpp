@@ -212,16 +212,16 @@ class TodoRequestHandlerFactory : public HTTPRequestHandlerFactory {
 public:
 	virtual HTTPRequestHandler* createRequestHandler(const HTTPServerRequest& request) {
 		string uri = request.getURI();
-		if (endsWith(uri, "/about")) {
+		if (Poco::endsWith(uri, string("/about"))) {
 			return new CAboutHandler;
 		}
-		else if (endsWith(uri, "/sign")) {
+		else if (Poco::endsWith(uri, string("/sign"))) {
 			return new CSignHandler;
 		}
 		else if (!request.getURI().find("/api/")) {
 			return new CTodoHandler;
 		}
-
+		//Poco::endsWith(uri, string("about"));
 	}
 };
 

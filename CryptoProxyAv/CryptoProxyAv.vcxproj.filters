@@ -65,9 +65,6 @@
     <ClCompile Include="src\helpers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\tests\sign.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\crypto.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

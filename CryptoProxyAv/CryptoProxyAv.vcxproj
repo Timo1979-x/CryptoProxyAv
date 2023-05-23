@@ -158,7 +158,6 @@
     <ClCompile Include="src\tests\EnumAlgorithms.cpp" />
     <ClCompile Include="src\tests\EnumProviders.cpp" />
     <ClCompile Include="src\helpers.cpp" />
-    <ClCompile Include="src\tests\sign.cpp" />
     <ClCompile Include="src\TodoServerApp.cpp" />
   </ItemGroup>
   <ItemGroup>
