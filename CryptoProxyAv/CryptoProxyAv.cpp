@@ -6,6 +6,7 @@
 #include "framework.h"
 #include "CryptoProxyAv.h"
 #include <windows.h>
+#include <wincrypt.h>
 #include <shellapi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -49,8 +50,9 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance,
     //testBase64decode();
     // Алгоритмы: "СТБ 1176.1",  "СТБ 34.101.31", провайдер:  L"Avest CNG Provider"
     //crypto::testHash(L"СТБ 34.101.31", L"Avest CNG Provider");
-    crypto::testSign(L"СТБ 34.101.31", L"Avest CNG Provider");
-    // crypto::enumStorageProviders();
+    // crypto::testSign(L"СТБ 34.101.31", L"Avest CNG Provider");
+    //crypto::getBelarussianAlgIds();
+    crypto::enumStorageProviders();
     return 0;
 
     // OutputDebugString(L"Unicode\n");

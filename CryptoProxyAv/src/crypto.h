@@ -8,4 +8,5 @@ namespace crypto {
 	uint8_t* sign(const wchar_t* algorithmName, const wchar_t* providerName, PBYTE data, int dataLength);
 	void testSign(const wchar_t* algorithmName, const wchar_t* providerName);
 	void enumStorageProviders();
+	void getBelarussianAlgIds();
 }

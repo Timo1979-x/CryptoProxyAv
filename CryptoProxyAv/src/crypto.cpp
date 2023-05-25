@@ -574,4 +574,12 @@ namespace crypto {
 		}
 		OutputDebugString(L"!");
 	}
+
+	void getBelarussianAlgIds() {
+		WCHAR buf[200];
+		auto digestAlgId = CertOIDToAlgId("1.2.112.0.2.0.34.101.31.81"); // 32825, 0x0x8039
+		auto signAlgId = CertOIDToAlgId("1.2.112.0.2.0.34.101.45.2.1"); // 8254,  0x203E
+		wsprintf(buf, L"1.2.112.0.2.0.34.101.31.81 () -> %d,   1.2.112.0.2.0.34.101.45.2.1 -> %d", digestAlgId, signAlgId);
+		OutputDebugString(buf);
+	}
 }
