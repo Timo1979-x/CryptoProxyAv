@@ -1,0 +1,2 @@
+bp kernelbase!CreateFileW ".printf \"Opening the file %mu\", dwo(@esp+4); echo; gc"
+bp kernelbase!CreateFileA ".printf \"Opening the file %ma\", dwo(@esp+4); echo; gc"
